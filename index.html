@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Classical Instruments Store</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #0c7b93;
+color: white;
+}
+
+/* Navigation Menu */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+
+.navbar a {
+float: left;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Column container */
+.row {
+display: flex;
+}
+
+/* Left and right column */
+.column {
+flex: 50%;
+padding: 20px;
+}
+
+/* Products */
+.product {
+float: left;
+padding: 20px;
+width: 30%;
+background-color: #f2f2f2;
+margin-bottom: 2%;
+}
+
+/* Feedback Form */
+#feedbackForm {
+width: 50%;
+margin: 20px auto;
+border: 1px solid #ddd;
+padding: 20px;
+background: #f2f2f2;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #333;
+color: white;
+}
+
+/* Responsive layout - make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+.row {
+flex-direction: column;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+<h1>Classical Instruments Store</h1>
+</div>
+
+<!-- Navigation Menu -->
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Contact</a>
+</div>
+
+<!-- Product List -->
+<div class="row">
+
+<!-- Left Column -->
+<div class="column">
+<div class="product">
+  <h3>Guitar</h3>
+  <p>A stringed musical instrument that usually has six strings.</p>
+  <p>$200</p>
+</div>
+
+<div class="product">
+  <h3>Piano</h3>  
+  <p>A keyboard musical instrument that produces sound by striking steel strings with felt hammers.</p>
+  <p>$500</p>
+</div>
+</div>
+
+<!-- Right Column -->
+<div class="column">
+<div class="product">
+  <h3>Violin</h3>
+  <p>A stringed musical instrument that is bowed.</p>  
+  <p>$150</p>
+</div>
+
+<div class="product">
+  <h3>Flute</h3>
+  <p>A transverse woodwind instrument that is blown at the side.</p>
+  <p>$100</p>
+</div>
+</div>
+
+</div>
+
+<!-- Feedback Form -->
+<div id="feedbackForm">
+<h2>Feedback</h2>
+<label for="name">Name:</label>
+<input type="text" id="name"><br><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email"><br><br>
+
+<label for="message">Message:</label><br><br>
+<textarea id="message" rows="5"></textarea><br><br>
+
+<input type="submit" value="Submit">
+</div>
+
+<!-- Footer -->
+<div class="footer">
+<p>Copyright 2021 - Classical Instruments Store</p>
+</div>
+
+</body>
+</html>
